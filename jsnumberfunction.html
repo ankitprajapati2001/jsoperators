@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //string method
+      const text = "Hello, World!";
+      console.log(text.toUpperCase());
+      console.log(text.toLowerCase());
+
+      const sentence = "The quick brown fox jumps over the lazy dog.";
+      console.log(sentence.indexOf("fox")); // 16
+
+      const greeting = "Good Morning!";
+      console.log(greeting.slice(0, 4)); // "Good"
+
+      const phrase = "I love JavaScript!";
+      console.log(phrase.replace("JavaScript", "coding")); // "I love coding!"
+
+      //number methods
+
+      const strNum = "42";
+      console.log(Number(strNum)); // 42
+
+      const num = 5.6789;
+      console.log(num.toFixed(2)); // "5.68"
+
+      const floatString = "3.14";
+      console.log(parseFloat(floatString)); // 3.14
+
+      const intString = "42";
+      console.log(parseInt(intString)); // 42
+
+      //math method
+
+      console.log(Math.round(4.5)); // 5
+      console.log(Math.round(4.4)); // 4
+
+      console.log(Math.random());
+
+      console.log(Math.max(1, 5, 10, 20)); // 20
+      console.log(Math.min(1, 5, 10, 20)); // 1
+
+      console.log(Math.sqrt(16)); // 4
+
+      //date method
+      const now = new Date();
+      console.log(now);
+
+      const today = new Date();
+      console.log(today.getFullYear()); // e.g., 2025
+      console.log(today.getMonth()); // 0-based month index
+      console.log(today.getDate());
+
+      const specificDate = new Date("2025-01-01");
+      console.log(specificDate);
+
+      const date1 = new Date("2025-01-01");
+      const date2 = new Date("2025-01-02");
+      console.log(date1 < date2); // true
+    </script>
+  </body>
+</html>
